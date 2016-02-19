@@ -739,6 +739,21 @@ ul.sub-menu {
     position: relative;
 }
 
+#page-breadcrumb {
+    background-image: url(../images/home/tour-bg.png);
+    background-color: #fafafa;
+    background-repeat: repeat-x;
+    height: 130px;
+    background-position: center;
+    display: table;
+    position: static;
+    width: 100%;
+}
+
+#company-information .padding-top {
+    padding-top: 172px;
+}
+
 .tour-button {
     background-image: url(../images/home/tour-icon2.png);
     height: 100%;
@@ -749,4 +764,122 @@ ul.sub-menu {
     background-position: 151px 4px;
 }
 
+#team {
+    padding: 85px 0;
+}
+
+#team-carousel {
+    margin-top: 80px;
+}
+
+.team-single {
+    position: relative;
+}
+
+.person-thumb {
+    position: relative;
+}
+
+/*team social-profile*/
+.social-profile {
+    background: none repeat scroll 0 0 rgba(137, 97, 46, 0.8);
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+
+.team-single:hover .social-profile {
+    background: rgba(112, 35, 64, 0.9);
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    -o-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+
+/*team social-profile 的 facebook twitter google 图标*/
+.social-profile .nav-pills {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    top: 50%;
+    margin-top: -26px;
+}
+
+.social-profile .nav-pills li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-profile .nav-pills li a {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /*将padding设置为0，图标显示居中了*/
+    padding: 0;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+
+.social-profile .nav-pills li a:hover {
+    color: #702340;
+    border-color: #702340;
+}
+
+.person-info h2 {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.person-info h3 {
+    font-size: 16px;
+    color: #686868;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Controls: 左右箭头的图标表示*/
+.team-carousel-control {
+    position: absolute;
+    top: 36%;
+    width: 13px;
+    height: 16px;
+    text-indent: -9999999px;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+
+.left.team-carousel-control{
+    left: -50px;
+    background-image: url(../images/aboutus/left.png);
+}
+
+.right.team-carousel-control{
+    right: -50px;
+    background-image: url(../images/aboutus/right.png);
+}
+
+.team-carousel-control:hover{
+    background-position: 0 -18px;
+}
 /************************About us End******************************/
