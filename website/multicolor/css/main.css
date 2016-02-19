@@ -882,4 +882,14 @@ ul.sub-menu {
 .team-carousel-control:hover{
     background-position: 0 -18px;
 }
+
+/*about us 2 count*/
+.count h1{
+    font-size: 60px;
+    color: #00aeef;
+}
+
+.count h3{
+    font-size: 16px;
+}
 /************************About us End******************************/

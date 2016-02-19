@@ -22,5 +22,8 @@ jQuery(function ($) {
     $(window).load(function () {
         $(".main-slider").addClass("animate-in");
         $(".preloader").remove();
-    })
+    });
+
+    $(".timer").countTo();
+
 });
