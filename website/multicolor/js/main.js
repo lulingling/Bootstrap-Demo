@@ -26,4 +26,9 @@ jQuery(function ($) {
 
     $(".timer").countTo();
 
+    /*progress bar*/
+    $.each($('div.progress-bar'), function () {
+        $(this).css('width', $(this).attr('data-transition') + "%");
+    })
+
 });

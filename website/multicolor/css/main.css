@@ -869,27 +869,66 @@ ul.sub-menu {
     transition: all 0.9s ease;
 }
 
-.left.team-carousel-control{
+.left.team-carousel-control {
     left: -50px;
     background-image: url(../images/aboutus/left.png);
 }
 
-.right.team-carousel-control{
+.right.team-carousel-control {
     right: -50px;
     background-image: url(../images/aboutus/right.png);
 }
 
-.team-carousel-control:hover{
+.team-carousel-control:hover {
     background-position: 0 -18px;
 }
 
 /*about us 2 count*/
-.count h1{
+.count h1 {
     font-size: 60px;
     color: #00aeef;
 }
 
-.count h3{
+.count h3 {
     font-size: 16px;
+}
+
+/*about us 2 progress bar*/
+.progress .progress-bar.six-sec-ease-in-out {
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -ms-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+.top-zero {
+    margin-top: 0;
+}
+
+/*h3.top-zero {*/
+    /*margin-top: 20px;*/
+/*}*/
+
+#company-information .about-us h2 {
+    margin-bottom: 45px;
+}
+
+.single-skill h3{
+    font-size: 16px;
+}
+
+.progress{
+    height: 30px;
+    box-shadow: none;
+}
+
+.progress-bar{
+    line-height: 30px;
+    box-shadow: none;
+}
+
+.progress-bar-primary{
+    background: #00aeef;
 }
 /************************About us End******************************/
