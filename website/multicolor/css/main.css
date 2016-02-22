@@ -907,28 +907,163 @@ ul.sub-menu {
 }
 
 /*h3.top-zero {*/
-    /*margin-top: 20px;*/
+/*margin-top: 20px;*/
 /*}*/
 
 #company-information .about-us h2 {
     margin-bottom: 45px;
 }
 
-.single-skill h3{
+.single-skill h3 {
     font-size: 16px;
 }
 
-.progress{
+.progress {
     height: 30px;
     box-shadow: none;
 }
 
-.progress-bar{
+.progress-bar {
     line-height: 30px;
     box-shadow: none;
 }
 
-.progress-bar-primary{
+.progress-bar-primary {
     background: #00aeef;
 }
+
 /************************About us End******************************/
+
+/************************Service Start*****************************/
+.choose {
+    padding-top: 30px;
+}
+
+#company-information.choose .padding-top {
+    padding-top: 50px;
+}
+
+#company-information h2 {
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+ul.elements {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.elements li {
+    margin: 6px 0;
+}
+
+ul.elements li > i {
+    color: #C03035;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#recent-projects {
+    padding: 85px 0;
+}
+
+#recent-projects .team-single {
+    height: 355px;
+}
+
+/************************Service End*******************************/
+
+/**************************Portfolio Default***********************************/
+.portfolio-single {
+    position: relative;
+}
+
+.portfolio-thumb {
+    position: relative;
+}
+
+.portfolio-thumb img {
+    width: 100%;
+}
+
+.portfolio-single:hover .portfolio-view {
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    -o-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
+}
+
+#portfolio .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/*portfolio fa-eye图标位置*/
+.portfolio-view {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: rgba(112, 35, 64, 0.9);
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio-view .nav-pills {
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    margin-top: -26px;
+    top: 50%;
+}
+
+.portfolio-view .nav-pills li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/*portfolio fa-eye图标样式*/
+.portfolio-view .nav-pills li a {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+
+    /*fa-eye居中*/
+    line-height: 38px;
+    text-align: center;
+    padding: 0;
+
+    -webkit-animation: scaleIn 400ms linear 100ms both;
+    -o-animation: scaleIn 400ms linear 100ms both;
+    animation: scaleIn 400ms linear 100ms both;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+
+.portfolio-view .nav-pills li a:hover{
+    color: #702340;
+    border-color: #702340;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+
+.portfolio-info{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.portfolio-info h2{
+    font-size: 18px;
+    margin: 15px 0 0;
+}

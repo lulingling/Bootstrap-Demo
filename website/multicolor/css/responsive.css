@@ -227,32 +227,36 @@
         text-align: center;
     }
 
-    .action.take-tour .col-sm-5{
+    .action.take-tour .col-sm-5 {
         width: 100%;
         margin-top: 120px;
     }
 
     /*features*/
-    .single-features{
+    .single-features {
         padding-bottom: 0;
         padding-top: 30px;
     }
 
-    .single-features img{
+    .single-features img {
         margin-bottom: 25px;
     }
 
-    .single-features{
+    .single-features {
         text-align: center;
     }
 
-    .single-features *{
+    .single-features * {
         display: inline-block;
         text-align: center;
     }
 
     /*about us*/
-    .team-single{
+    .team-single {
         margin-bottom: 30px;
+    }
+
+    #company-information.choose .padding-top {
+        padding-top: 0;
     }
 }
