@@ -29,6 +29,30 @@
 /*sm only*/
 
 /*md*/
+@media only screen and (max-width: 1200px) {
+    /*pricing table*/
+    .single-price .plan-price:after{
+        border-width: 100px;
+        margin-left: -100px;
+    }
+
+    /*price table 2*/
+    .single-table .table-content{
+        padding: 20px;
+    }
+
+    .table-header{
+        padding: 0 10px 7px;
+    }
+
+    .single-table:before{
+        border-width: 0 106px 60px;
+    }
+
+    .single-table .btn-signup:after{
+        border-width: 78px 106px 0;
+    }
+}
 
 /*sm*/
 @media only screen and (max-width: 992px) {
@@ -87,6 +111,37 @@
         right: 0;
         bottom: 90px;
         width: 80px;
+    }
+
+    /*pricing table*/
+    .single-price{
+        margin-bottom: 40px;
+    }
+
+    .single-price .plan-price{
+        height: 140px;
+    }
+
+    .single-price .plan-price:after{
+        border-width: 140px;
+        margin-left: -140px;
+    }
+
+    /*price table 2*/
+    .single-table{
+        margin-bottom: 50px;
+    }
+
+    .single-table:before{
+        border-width: 0 172px 60px;
+    }
+
+    .single-table .btn-signup:after{
+        border-width: 78px 173px 0;
+    }
+
+    #price-table2{
+        margin-bottom: 100px;
     }
 }
 
