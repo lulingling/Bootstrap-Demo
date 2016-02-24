@@ -268,6 +268,33 @@
         margin-right: -200px;
     }
 
+    /*pricing table*/
+    .single-price, .single-table{
+        margin-bottom: 45px;
+    }
+
+    .single-price .plan-price{
+        height: 200px;
+        padding-top: 25px;
+    }
+
+    .single-price .plan-price:after{
+        border-width: 200px;
+        margin-left: -200px;
+    }
+
+    .single-table:before{
+        border-width: 0 120px 60px;
+    }
+
+    .single-table .btn-signup:after{
+        border-width: 78px 120px 0;
+    }
+
+    .single-table .btn-signup a{
+        padding: 15px;
+    }
+
     /*action*/
     #action.responsive {
         height: 255px;
