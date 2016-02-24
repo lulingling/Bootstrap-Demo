@@ -341,4 +341,101 @@
     #company-information.choose .padding-top {
         padding-top: 0;
     }
+
+    /*coming soon*/
+    #countdown li.angle-one{
+        left: 60px;
+    }
+
+    #countdown li.angle-two{
+        left: 20px;
+    }
+
+    #countdown li.angle-three{
+        right: 20px;
+    }
+
+    #countdown li.angle-four{
+        right: 60px;
+    }
+
+    #countdown li > span{
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 30px;
+    }
+
+    #countdown li.angle-two > span,
+    #countdown li.angle-four > span{
+        margin-top: 60px;
+    }
+
+    #subscribe{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #newsletter .form-control{
+        font-size: 14px;
+        height: 40px;
+    }
+
+    #newsletter i{
+        font-size: 25px;
+    }
+
+    #countdown li.angle-one span.minutes,
+    #countdown li.angle-one .minute{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    /*coming soon*/
+    #countdown li.angle-one{
+        left: 25px;
+    }
+
+    #countdown li.angle-two{
+        left: 10px;
+    }
+
+    #countdown li.angle-three{
+        right: 10px;
+    }
+
+    #countdown li.angle-four{
+        right: 25px;
+    }
+
+    #countdown li > span{
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 10px;
+    }
+
+    #countdown li.angle-two > span,
+    #countdown li.angle-four >span{
+        margin-top: 30px;
+    }
+
+    #subscribe{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #newsletter .form-control{
+        font-size: 14px;
+        height: 40px;
+    }
+
+    #newsletter i{
+        font-size: 25px;
+    }
+
+    #countdown li.angle-one span.minutes,
+    #countdown li.angle-one .minute{
+        margin-left: 0;
+    }
+
 }
