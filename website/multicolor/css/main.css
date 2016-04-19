@@ -1982,10 +1982,11 @@ a.read-more:hover {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 /*categories active 时左边的右箭头图标 end*/
 
 /*sidebar recent comments*/
-.sidebar-item .media{
+.sidebar-item .media {
     border-bottom: 1px solid #ececec;
     padding-bottom: 10px;
     padding-top: 21px;
@@ -1997,12 +1998,12 @@ a.read-more:hover {
     transition: all 0.3s ease 0s;
 }
 
-.sidebar-item .media:last-child{
+.sidebar-item .media:last-child {
     border-bottom: 0 solid #0099ae;
     padding-bottom: 0;
 }
 
-.sidebar-item .media:hover{
+.sidebar-item .media:hover {
     border-left: 2px solid #0099ae;
     padding-left: 5px;
     -webkit-transition: all 0.3s ease 0s;
@@ -2012,7 +2013,7 @@ a.read-more:hover {
     transition: all 0.3s ease 0s;
 }
 
-.sidebar-item .media:hover.media .media-body h4 a{
+.sidebar-item .media:hover.media .media-body h4 a {
     color: #0099ae;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -2021,28 +2022,28 @@ a.read-more:hover {
     transition: all 0.3s ease 0s;
 }
 
-.sidebar-item .media .media-body h4{
+.sidebar-item .media .media-body h4 {
     margin-top: 0;
     margin-bottom: 8px;
 }
 
-.sidebar-item .media .media-body h4 a{
+.sidebar-item .media .media-body h4 a {
     color: #7d7d7d;
     font-size: 12px;
 }
 
 /*tag cloud*/
-.tag-cloud .nav-pills{
+.tag-cloud .nav-pills {
     margin-top: 16px;
 }
 
-.tag-cloud .nav-pills li{
+.tag-cloud .nav-pills li {
     margin: 0;
     margin-top: 6px;
     margin-right: 4px;
 }
 
-.tag-cloud .nav-pills li a{
+.tag-cloud .nav-pills li a {
     font-size: 14px;
     font-weight: 300;
     padding: 5px 15px;
@@ -2053,30 +2054,30 @@ a.read-more:hover {
     border-radius: 3px;
 }
 
-.tag-cloud .nav-pills li a:hover{
+.tag-cloud .nav-pills li a:hover {
     background: #0099ae;
 }
 
 /*sidebar latest photos*/
-.popular ul.gallery{
+.popular ul.gallery {
     margin: 0;
     padding: 0;
     list-style: none;
     margin: 10px -8px;
 }
 
-.popular ul.gallery li{
+.popular ul.gallery li {
     display: block;
     width: 33%;
     float: left;
     padding: 8px;
 }
 
-.popular ul.gallery li a{
+.popular ul.gallery li a {
     display: block;
 }
 
-.popular ul.gallery li a img{
+.popular ul.gallery li a img {
     width: 100%;
     -webkit-transition: border-radius 300ms ease-in;
     -moz-transition: border-radius 300ms ease-in;
@@ -2085,8 +2086,72 @@ a.read-more:hover {
     transition: border-radius 300ms ease-in;
 }
 
-.popular ul.gallery li a img:hover{
+.popular ul.gallery li a img:hover {
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
     border-radius: 60px;
+}
+
+/*blogtwo timeline*/
+.timeline-divider {
+    position: relative;
+    padding-top: 50px;
+}
+
+/*中间的间隔线*/
+.timeline-divider:before {
+    position: absolute;
+    top: 0;
+    content: '';
+    border-left-style: solid;
+    border-left-width: 1px;
+    height: 100%;
+    border-left-color: #0099ae;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-blog .col-sm-6.padding-top {
+    padding-top: 70px;
+}
+
+/*timeline-date style*/
+.timeline-date .btn-common {
+    font-size: 18px;
+    color: #4a4a4a;
+    font-weight: 300;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 17px 40px;
+}
+
+/*blogtwo timeline 右三角形图标*/
+.arrow-right {
+    position: relative;
+}
+
+.arrow-right:after {
+    position: absolute;
+    right: 1px;
+    content: '';
+    top: 15px;
+    background: url("../images/blog/left.png");
+    width: 43px;
+    height: 54px;
+}
+
+/*blogtwo timeline 左三角形图标*/
+.arrow-left{
+    position: relative;
+}
+
+.arrow-left:before{
+    position: absolute;
+    left: -2px;
+    content: '';
+    top: 86px;
+    background: url("../images/blog/right.png");
+    width: 43px;
+    height: 54px;
 }
