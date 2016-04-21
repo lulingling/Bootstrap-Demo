@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平表单</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="border: 1px solid black;background-color: blanchedalmond;margin: 0 auto 20px;">
+    <h2>创建水平表单步骤：</h2>
+    <ol>
+        <li>向父&lt;form&gt;元素添加class .form-horizontal;</li>
+        <li>把标签和控件放在一个带有 class .form-group 的&lt;div&gt; 中。这是获取最佳间距所必需的;</li>
+        <li>向标签添加class .control-label。</li>
+    </ol>
+</div>
+
+<form role="form" class="form-horizontal">
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">名字</label>
+
+        <div class="col-sm-10">
+            <input id="firstname" class="form-control" type="text" placeholder="请输入名字">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">姓</label>
+
+        <div class="col-sm-10">
+            <input class="form-control" type="text" id="lastname" placeholder="请输入姓">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">请打勾
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <button type="submit" class="btn btn-default">登录</button>
+        </div>
+    </div>
+
+</form>
+</body>
+</html>

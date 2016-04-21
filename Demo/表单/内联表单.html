@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内联表单</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div style="border: 1px solid black;background-color: blanchedalmond;margin: 0 auto 20px;">
+    <h2>创建内联表单步骤：</h2>
+    <ol>
+        <li>如果需要创建一个表单，它的所有元素是内联的，向左对齐的，标签是并排的，请向&lt;form&gt; 标签添加 class .form-inline。</li>
+        <li>使用class .sr-only可以隐藏内联表单的标签</li>
+    </ol>
+    <b>注意：</b>
+    <p>默认情况下，Bootstrap中的input、textarea和select有100%的宽度，在使用内联表单时，需要在表单控件上设置宽度。</p>
+</div>
+
+<form class="form-inline" role="form">
+    <div class="form-group">
+        <label class="sr-only" for="name">名称</label>
+        <input id="name" class="form-control" type="text" placeholder="请输入名称">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="inputFile">文件输入</label>
+        <input type="file" id="inputFile">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox">请打勾
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本表单</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="border: 1px solid black;background-color: blanchedalmond;margin: 0 auto 20px;">
+    <h2>创建基本表单步骤：</h2>
+    <ol>
+        <li>向父&lt;form&gt;元素添加role="form";</li>
+        <li>把标签和控件放在一个带有 class .form-group 的&lt;div&gt; 中。这是获取最佳间距所必需的;</li>
+        <li>向所有的文本元素&lt;input&gt;、&lt;textarea&gt;和&lt;select&gt;添加class .form-control。</li>
+    </ol>
+</div>
+
+<form role="form">
+    <div class="form-group">
+        <label for="name">名称</label>
+        <input id="name" class="form-control" type="text" placeholder="请输入名称">
+    </div>
+    <div class="form-group">
+        <label for="inputFile">文件输入</label>
+        <input type="file" id="inputFile">
+
+        <p class="help-block">这是块级帮助文本实例</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox">请打勾
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+</form>
+</body>
+</html>
