@@ -38,8 +38,8 @@ $(function () {
             lastId = id;
             // Set/remove active class
             menuItems
-                .parent().removeClass("active")
-                .end().filter("[href=#" + id + "]").parent().addClass("active");
+                .parent().removeClass("current")
+                .end().filter("[href=#" + id + "]").parent().addClass("current");
         }
 
     });
