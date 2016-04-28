@@ -3,28 +3,28 @@ h1, h3, p, a button {
 }
 
 /*navigation*/
-.side-nav{
+.side-nav {
     position: fixed;
     top: 45%;
     right: 20px;
     z-index: 1;
 }
 
-.side-nav ul.nav-side-nav{
+.side-nav ul.nav-side-nav {
     text-align: center;
     list-style: none;
     margin: 0;
     padding-left: 0;
 }
 
-.side-nav ul.nav-side-nav > li{
+.side-nav ul.nav-side-nav > li {
     display: block;
     line-height: 1.45em;
     margin: 0;
     padding: 8px 0;
 }
 
-.side-nav ul.nav-side-nav > li > a{
+.side-nav ul.nav-side-nav > li > a {
     display: block;
     width: 10px;
     height: 10px;
@@ -32,6 +32,10 @@ h1, h3, p, a button {
     -moz-border-radius: 50%;
     border-radius: 50%;
     background: #ffffff;
+}
+
+.active{
+    background: #000;
 }
 
 /*pageone*/
@@ -206,7 +210,7 @@ h1, h3, p, a button {
 
 /*page four*/
 .fourpage {
-    height: 700px;
+    height: 800px;
     background-image: url(images/img17.jpg);
     margin-top: 800px;
 }
@@ -224,11 +228,15 @@ h1, h3, p, a button {
 }
 
 .fourpage .container .carousel {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
-.fourpage .container .carousel .carousel-inner .item{
+.fourpage .container .carousel .carousel-inner .item {
     margin: 0 auto;
+}
+
+.item img {
+    width: 100%;
 }
 
 .carousel-control.left {
@@ -253,10 +261,12 @@ h1, h3, p, a button {
 
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
     left: -20%;
+    margin-top: 60px;
 }
 
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
     right: -20%;
+    margin-top: 60px;
 }
 
 /*pagefive*/
@@ -304,4 +314,29 @@ h1, h3, p, a button {
     margin-top: 20px;
     color: #000000;
 
+}
+
+/*ÖÃ¶¥°´Å¥*/
+.scrollup {
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 39px;
+    height: 39px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    border: 1px solid #ffffff;
+    display: none;
+    background: #FECE1A;
+}
+
+.scrollup > a {
+    position: relative;
+    top: 6px;
+    color: #ffffff;
 }
