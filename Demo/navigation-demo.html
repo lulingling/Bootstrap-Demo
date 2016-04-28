@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .main-navigation {
+            text-align: center;
+            background-color: #ffffff;
+            border-top: 1px solid #ebebeb;
+            border-bottom: 3px solid #ebebeb;
+        }
+
+        .navbar-header {
+            text-align: center;
+        }
+
+        .navbar-header .navbar-toggle {
+            display: inline-block;
+            margin: 0 auto;
+            float: none;
+            font-size: 25px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar-header .navbar-toggle {
+                display: none;
+            }
+        }
+
+        .main-navigation .menu {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .main-navigation .menu li.nav-current {
+            border-bottom: 3px solid #e67e22;
+            margin-bottom: -1px;
+        }
+
+        .main-navigation .menu li {
+            list-style: none;
+            display: inline-block;
+            position: relative;
+        }
+
+        .main-navigation .menu li a {
+            color: #505050;
+            line-height: 4em;
+            display: block;
+            padding: 0 21px;
+        }
+    </style>
+</head>
+<body>
+<nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <i class="glyphicon glyphicon-menu-hamburger"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu" aria-expanded="true">
+                    <ul class="menu">
+                        <li class="nav-current" role="presentation">
+                            <a href="#">首页</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">论坛</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">快捷手册</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">中文文档</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">下载</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">关于</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+</body>
+</html>
