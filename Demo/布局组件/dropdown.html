@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="dropdown pull-right">
+        <button type="button" class="btn btn-default" data-toggle="dropdown" aria-hidden="true">
+            地铁线路
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <!--标题class: dropdown-menu-header-->
+            <li role="presentation" class="dropdown-menu-header">
+                地铁
+            </li>
+
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">1号线</a>
+            </li>
+            <!--禁用：class: disabled-->
+            <li role="presentation" class="disabled">
+                <a role="menuitem" tabindex="-1" href="#">2号线</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">3号线</a>
+            </li>
+            <!--分割线：class: divider-->
+            <li role="presentation" class="divider"></li>
+
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">4号线</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">5号线</a>
+            </li>
+
+            <li role="presentation" class="dropdown-menu-header">
+                公交
+            </li>
+
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">1路车</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">2路车</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">3路车</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">4路车</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>

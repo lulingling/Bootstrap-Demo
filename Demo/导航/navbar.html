@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航条</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        /*导航条的高估是75px，如果是将导航条固定（class:navbar-fixed-top ）在顶部，则要将body设置如下，否则导航条遮住内容
+        同理固定在（class: navbar-fixed-bottom）底部；静止在顶部or底部则是（class： navbar-static-top/ navbar-static-bottom），*/
+        body {
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+<!--导航条反色：class :navbar-inverse-->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" style="width: 40px;">
+            </a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link<span class="sr-only"></span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                    Dropdown
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Hello</a></li>
+                    <li><a href="#">Hello</a></li>
+                    <li><a href="#">Hello</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+        <button type="button" class="btn btn-default navbar-btn navbar-right">Sign in</button>
+
+        <p class="navbar-text">
+            欢迎来到
+            <a class="navbar-link" href="#">逑美</a>
+        </p>
+    </div>
+</nav>
+
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+Hello Qiumei.<br>
+
+
+</body>
+</html>

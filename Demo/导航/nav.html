@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<h3>当行：标签页：class: nav-tabs; 胶囊式标签页：class: nav-pills; 垂直：class: nav-stacked;
+    两端对齐：class: nav-justified</h3>
+<ul class="nav nav-pills nav-justified" id="mytab">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Home</a></li>
+    <li role="presentation">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </li>
+</ul>
+<script>
+    $("#mytab a").click(function (e) {
+        $(this).tab("show");
+    });
+</script>
+</body>
+</html>
