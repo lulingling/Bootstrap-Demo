@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        /*屏幕宽度小于768px，影藏logo和navbar-toggle button*/
+        /*@media (max-width: 768px) {
+            .navbar-brand {
+                display: none;
+            }
+        }*/
+
+        /*屏幕宽度大于769px，影藏图标*/
+        @media (min-width: 769px) {
+            .hidden-769 {
+                display: none;
+            }
+        }
+
+        .vertical .container-fluid {
+            padding: 0;
+            margin: 0 15px;
+            width: 50px;
+        }
+
+        .vertical .container-fluid .navbar-brand {
+            display: none;
+        }
+
+        .vertical #example {
+            display: block;
+        }
+
+        .vertical #example li a i {
+            display: block;
+        }
+
+        .vertical #example li .expanded-text {
+            display: none;
+        }
+
+        .vertical #example .navbar-right {
+            float: left !important;
+        }
+
+    </style>
+
+    <script>
+        $(function () {
+            $("#menu-icon").click(function () {
+                var nav_container = $("nav.navbar.navbar-default");
+
+                if (nav_container.hasClass("vertical")) {
+                    nav_container.removeClass("vertical");
+                    nav_container.find(".dropdown-menu").removeClass("dropdown-menu-left");
+                } else {
+                    nav_container.addClass("vertical");
+                    nav_container.find(".dropdown-menu").addClass("dropdown-menu-left");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" style="width: 40px;">
+            </a>
+        </div>
+        <div class="" id="example">
+
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <a href="javascript:;" id="menu-icon" class="glyphicon glyphicon-menu-hamburger"></a>
+                </li>
+
+                <li class="active">
+                    <a href="#" class="">
+                        <i class="glyphicon glyphicon-home hidden-769"></i>
+                        <span class="expanded-text">站点</span>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="">
+                        <i class="glyphicon glyphicon-cog hidden-769"></i>
+                        <span class="expanded-text">应用</span>
+                    </a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle class=" data-toggle="dropdown" role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        <i class="glyphicon glyphicon-star-empty hidden-769"></i>
+                        <span class="expanded-text">会员</span>
+                        <span class="caret expanded-text"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">会员等级</a></li>
+                        <li><a href="#">会员充值</a></li>
+                        <li><a href="#">福利社</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">邀请好友</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">领取好礼</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" class="">
+                        <i class="glyphicon glyphicon-wrench hidden-769"></i>
+                        <span class="expanded-text">设置</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        <i class="glyphicon glyphicon-user hidden-769"></i>
+                        <span class="expanded-text">用户</span>
+                        <span class="caret expanded-text"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">修改信息</a></li>
+                        <li><a href="#">购物车</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">消息记录</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</body>
+</html>
